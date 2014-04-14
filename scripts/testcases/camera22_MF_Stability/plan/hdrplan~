@@ -1,0 +1,11 @@
+[tests]
+hdrcapture.CameraTest.testCapturePictureWithFDOn = 1
+hdrcapture.CameraTest.testCapturePictureWithFDOff = 1
+hdrcapture.CameraTest.testCapturePictureWithPictureSizeStandard = 1
+hdrcapture.CameraTest.testCaptureWithPictureSizeWidesreen = 1
+hdrcapture.CameraTest.testCapturepictureWithGeoLocationOn = 1
+hdrcapture.CameraTest.testCapturepictureWithGeoLocationOff = 1
+hdrcapture.CameraTest.testCapturePictureWithSelfTimerOff = 1
+hdrcapture.CameraTest.testCapturePictureWithThreeSec = 1
+hdrcapture.CameraTest.testCapturePictureWithFiveSec = 1
+hdrcapture.CameraTest.testCapturePictureWithTenSec = 1

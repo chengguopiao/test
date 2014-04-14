@@ -1,0 +1,74 @@
+[tests]
+panoramacapture.PanoramaTest.testCaptureWithExposure = 2
+panoramacapture.PanoramaTest.testCapturepictureWithGeoLocation = 2
+panoramacapture.PanoramaTest.testCapturepictureWithISOSetting = 2
+perfectshot.PerfectShotTest.testCaptureWithExposure = 2
+perfectshot.PerfectShotTest.testCapturePictureWithScenes = 2
+perfectshot.PerfectShotTest.testCapturepictureWithGeoLocation = 2
+Continuouscapture.CameraTest.testCapturePictureWithFlash = 2
+Continuouscapture.CameraTest.testCaptureWithExposure = 2
+Continuouscapture.CameraTest.testCapturePictureWithScenes = 2
+Continuouscapture.CameraTest.testCapturePictureWithFD = 2
+Continuouscapture.CameraTest.testCapturePictureWithPictureSize= 2
+Continuouscapture.CameraTest.testCapturepictureWithHints =2
+Continuouscapture.CameraTest.testCapturepictureWithGeoLocation = 2
+Continuouscapture.CameraTest.testRearFaceCapturePictureWithFD = 2
+Continuouscapture.CameraTest.testRearFaceCapturepictureWithGeoLocation = 2
+Continuouscapture.CameraTest.testCapturepictureWithSelfTimer = 2
+Continuouscapture.CameraTest.testCapturepictureWithISO = 2
+Continuouscapture.CameraTest.testCapturepictureWithWhiteBalance = 2
+burstslowcapture.BurstCameraTest.testCaptureWithExposure = 2
+burstslowcapture.BurstCameraTest.testCapturePictureWithScenes = 2
+burstslowcapture.BurstCameraTest.testCaptureWithPictureSize = 2
+burstslowcapture.BurstCameraTest.testCapturepictureWithGeoLocation = 2
+burstfastcapture.BurstCameraTest.testCaptureWithExposure = 2
+burstfastcapture.BurstCameraTest.testCapturePictureWithScenes = 2
+burstfastcapture.BurstCameraTest.testCaptureWithPictureSize = 2
+burstfastcapture.BurstCameraTest.testCapturepictureWithGeoLocation = 2
+smilecapture.CameraTest.testCapturePictureWithFlash = 2
+smilecapture.CameraTest.testCaptureWithExposure = 2
+smilecapture.CameraTest.testCapturePictureWithScenes = 2
+smilecapture.CameraTest.testCapturePictureWithPictureSize = 2
+smilecapture.CameraTest.testCapturepictureWithGeoLocation = 2
+smilecapture.CameraTest.testCapturepictureWithISO = 2
+smilecapture.CameraTest.testCapturepictureWithWhiteBalance = 2
+smilecapture.CameraTest.testRearFaceCapturepictureWithGeoLocation = 2
+videocapture.VideoCameraTest.testRecordVideoWithFlash = 2
+videocapture.VideoCameraTest.testRecordVideoWithVideoSize = 2
+videocapture.VideoCameraTest.testRecordVideoWithGeoLocation = 2
+videocapture.VideoCameraTest.testRecordSwithToTestCamera=2
+videocapture.VideoCameraTest.testRearFaceRecordVideoWithGeoLocation = 2
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithBalance = 2
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithExposure = 2
+videocapture.VideoCameraTest.testRecordVideoWithCaptureImage = 2
+hdrcapture.CameraTest.testCapturePictureWithFD = 2
+hdrcapture.CameraTest.testCapturepictureWithGeoLocation = 2
+hdrcapture.CameraTest.testCapturePictureWithPictureSize = 2
+hdrcapture.CameraTest.testCapturePictureWithSelfTimer = 2
+singlecamera.CameraTest.testCapturePictureWithFlash = 2
+singlecamera.CameraTest.testCaptureWithExposure = 2
+singlecamera.CameraTest.testCapturePictureWithScenes = 2
+singlecamera.CameraTest.testCapturePictureWithFD = 2
+singlecamera.CameraTest.testCapturePictureWithPictureSize = 2
+singlecamera.CameraTest.testCapturepictureWithHints =2
+singlecamera.CameraTest.testCapturepictureWithGeoLocation = 2
+singlecamera.CameraTest.testSwitchToCamera=2
+singlecamera.CameraTest.testRearFaceCapturePictureWithFD = 2
+singlecamera.CameraTest.testRearFaceCapturepictureWithGeoLocation = 2
+singlecamera.CameraTest.testCapturepictureWithSelfTimer = 2
+singlecamera.CameraTest.testCapturepictureWithISO = 2
+singlecamera.CameraTest.testCapturepictureWithWhiteBalance = 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+

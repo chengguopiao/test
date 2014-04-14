@@ -1,0 +1,2 @@
+[tests]
+Continuouscapture.CameraTest.testCapturepictureWithHints = 100
