@@ -1,0 +1,73 @@
+#!/usr/bin/env python
+import unittest
+import string
+import os
+import commands
+import time
+
+PACKAGE_NAME = 'com.intel.camera22'
+ACTIVITY_NAME = PACKAGE_NAME + '.Camera'
+DCIM_PATH = '/sdcard/DCIM'
+CAMERA_FOLDER = '100ANDRO'
+CAMERA_ID = 'cat /data/data/com.intel.camera22/shared_prefs/com.intel.camera22_preferences_0.xml | grep pref_camera_id_key'
+PICTURE_PATH = '' + os.sep + 'mnt'+os.sep+ DCIM_PATH+'/'+CAMERA_FOLDER
+
+class CameraTest(unittest.TestCase):
+    def setUp(self):
+        super(CameraTest,self).setUp()
+	commands.getoutput('adb shell am start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -n com.android.settings/.Settings')
+	time.sleep(2)
+	#touch app
+        commands.getoutput('adb shell input swipe 600 950 600 500')
+	self.touch('Apps.png')
+	for i in range(2):
+	    commands.getoutput('adb shell input swipe 626 626 49 626')
+	    time.sleep(2)
+	while not self.exists('camera.png'):
+	    commands.getoutput('adb shell input swipe 455 1025 512 564')
+	    time.sleep(2)
+	self.touch('camera.png',waittime=2)
+	self.touch('cleardata.png',waittime=2)
+	self.touch('confirmclear.png',waittime=2)
+	self.press('back,back,back,back,home')
+        self.runComponent = PACKAGE_NAME + '/' + ACTIVITY_NAME
+        self.launch(self.runComponent)
+        if self.exists('location.png'):
+            self.touch('ok.png')
+
+    def testLaunchCameraDefault(self):
+        """
+        Summary:testLaunchCameraDefault: Check enable GPS-tagging dialog when launch camera default
+        Steps:  1. launching camera from default
+                2. Check enable GPS-tagging dialog
+        """
+
+        self._identifyCameraBack()
+        self.expect('1_launch_checkpoint.png')
+        if self.exists('location.png'):
+            self.touch('ok.png')
+
+    def tearDown(self):
+        self.adbCmd('rm -r '+ PICTURE_PATH + '/*')
+        self.press('back,back,back,home')
+        super(CameraTest,self).tearDown()
+
+
+
+    def _identifyCameraBack(self):
+        #Check camera already set to back camera successfully
+        self.logger.debug("Check the rear camera...")
+        cameid2value = self.adbCmd(CAMERA_ID)
+        self.logger.debug("Camera ID 2 value is: " + cameid2value)
+        if cameid2value !='':
+            mCameraID2Value = cameid2value.find(CAMERA_ID_BACK)
+            if mCameraID2Value == -1:
+                self.logger.debug("Switch the camera to back...")
+                commands.getoutput('adb shell input swipe 530 6 523 22')
+                self.touch(SwitchFrontbackCamera,waittime=3)
+                self.failIf(self.adbCmd(CAMERA_ID).find(CAMERA_ID_BACK) == -1,"Switch the camera to rear failed...")
+            else:
+                self.logger.debug("Current camera is rear...")
+        else:
+            self.logger.debug("Current camera is rear...")
+

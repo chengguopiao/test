@@ -1,0 +1,279 @@
+#!/usr/bin/env python
+import unittest
+import string
+import os
+import commands
+
+"""
+@author:Cao Lina
+@Note:Stability test cases for intel camera2.2
+"""
+PACKAGE_NAME = 'com.intel.camera22'
+ACTIVITY_NAME = PACKAGE_NAME + '.Camera'
+
+DCIM_PATH = '/mnt/sdcard/DCIM'
+CAMERA_FOLDER = '100ANDRO'
+Exposure_STATE= 'cat /data/data/com.intel.camera22/shared_prefs/com.intel.camera22_preferences_0_0.xml | grep pref_camera_exposure_key'
+Scene_STATE = 'cat /data/data/com.intel.camera22/shared_prefs/com.intel.camera22_preferences_0_0.xml | grep pref_camera_scenemode_key'
+Geolocation_STATE ='cat /data/data/com.intel.camera22/shared_prefs/com.intel.camera22_preferences_0.xml | grep pref_camera_geo_location_key' 
+PICTURE_PATH = '' + os.sep + 'mnt'+os.sep+ DCIM_PATH+ '/'+CAMERA_FOLDER
+Camera =(366,1200)
+Setting =(60,62)
+Geolocation=(60,172)
+Exposure=(280,176)
+Scences=(170,180)
+
+class PerfectShotTest(unittest.TestCase):
+
+    def setUp(self):
+        super(PerfectShotTest, self).setUp()
+        #Set the name and component to start activity
+        self.runComponent= PACKAGE_NAME + '/' + ACTIVITY_NAME
+        # Runs the component
+        self._launchperfectshot()
+
+    def testCapturepictureWithGeoLocationOn(self):
+        """
+        Summary:testCapturepictureWithGeoLocationOn: capture PerfectShot picture in geolocation on mode
+        Steps:  1.Launch perfect shot activity
+                2.Check geo-tag ,set to ON
+                3.Touch shutter button to capture picture
+                4.Exit activity
+        """ 
+        self.expect('1_launch_checkpoint.png') 
+        #Step 2
+        self._setGeoLocationStatus('on')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def testCapturepictureWithGeoLocationOff(self):
+        """
+        Summary:testCapturepictureWithGeoLocationOff: capture PerfectShot picture in geolocation off mode
+        Steps:  1.Launch perfect shot activity
+                2.Check geo-tag ,set to Off
+                3.Touch shutter button to capture  picture
+                4.Exit activity
+        """ 
+        self.expect('1_launch_checkpoint.png') 
+        #Step 2
+        self._setGeoLocationStatus('off')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def testCaptureWithExposurePlusOne(self):
+        """
+        Summary:testCaptureWithExposurePlusOne: Take burst piture with exposure +1
+        Steps:  1.Launch perfect shot activity
+                2.Check exposure setting icon ,set to +1
+                3.Touch shutter button to capture picture
+                4.Exit  activity
+        """
+        self.expect('1_launch_checkpoint.png')           
+        #Step 2
+        self._setExposureStatus('3')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def testCaptureWithExposurePlusTwo(self):
+        """
+        Summary:testCapturePictureWithExposurePlusOne: Take burst piture with exposure +2
+        Steps:  1.Launch perfect shot activity
+                2.Check exposure setting icon ,set to +2
+                3.Touch shutter button to capture picture
+                4.Exit  activity
+        """
+        self.expect('1_launch_checkpoint.png')           
+        #Step 2
+        self._setExposureStatus('6')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def testCaptureWithExposureRedOne(self):
+        """
+        Summary:testCaptureWithExposureRedOne: Take burst piture with exposure -1
+        Steps:  1.Launch perfect shot activity
+                2.Check exposure setting icon ,set to -1
+                3.Touch shutter button to capture picture
+                4.Exit  activity
+        """
+        self.expect('1_launch_checkpoint.png')           
+        #Step 2
+        self._setExposureStatus('-3')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def testCaptureWithExposureRedTwo(self):
+        """
+        Summary:testCaptureWithExposureRedTwo: Take burst piture with exposure -2
+        Steps:  1.Launch perfect shot activity
+                2.Check exposure setting icon ,set to -2
+                3.Touch shutter button to capture picture
+                4.Exit  activity
+        """
+        self.expect('1_launch_checkpoint.png')           
+        #Step 2
+        self._setExposureStatus('-6')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def testCaptureWithExposureZero(self):
+        """
+        Summary:testCaptureWithExposureZero: Take burst piture with exposure 0
+        Steps:  1.Launch perfect shot activity
+                2.Check exposure setting icon ,set to 0
+                3.Touch shutter button to capture picture
+                4.Exit  activity
+        """
+        self.expect('1_launch_checkpoint.png')           
+        #Step 2
+        self._setExposureStatus('0')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def testCapturePictureWithScenesSport(self):
+        """
+        Summary:testCapturePictureWithScenesSport: Take picture with set scenes to Sports
+        Steps:  1Launch perfect shot activity
+                2.Check scence mode ,set mode to Sports
+                3.Touch shutter button to capture picture
+                4.Exit  activity
+        """
+        self.expect('1_launch_checkpoint.png') 
+        # Step 2
+        self._setScenesStatus('sports')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def testCapturePictureWithScenesNight(self):
+        """
+        Summary:testCapturePictureWithScenesNight: Take picture with set scenes to night
+        Steps:  1.Launch perfect shot activity
+                2.Check scence mode ,set mode to night
+                3.Touch shutter button to capture picture
+                4.Exit  activity
+        """
+        self.expect('1_launch_checkpoint.png') 
+        # Step 2
+        self._setScenesStatus('night')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def testCapturePictureWithScenesLandscape(self):
+        """
+        Summary:testCapturePictureWithScenesLandscape: Take picture with set scenes to landscape
+        Steps:  1.Launch perfect shot activity
+                2.Check scence mode ,set mode to landscape
+                3.Touch shutter button to capture picture
+                4.Exit  activity
+        """
+        self.expect('1_launch_checkpoint.png') 
+        # Step 2
+        self._setScenesStatus('landscape')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def testCapturePictureWithScenesPortrait(self):
+        """
+        Summary:testCapturePictureWithScenesSport: Take picture with set scenes to portrait
+        Steps:  1.Launch perfect shot activity
+                2.Check scence mode ,set mode to portrait
+                3.Touch shutter button to capture picture
+                4.Exit  activity
+        """
+        self.expect('1_launch_checkpoint.png') 
+        # Step 2
+        self._setScenesStatus('portrait')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def testCapturePictureWithScenesAuto(self):
+        """
+        Summary:testCapturePictureWithScenesAuto: Take picture with set scenes to auto
+        Steps:  1.Launch perfect shot activity
+                2.Check scence mode ,set mode to auto
+                3.Touch shutter button to capture picture
+                4.Exit  activity
+        """
+        self.expect('1_launch_checkpoint.png') 
+        # Step 2
+        self._setScenesStatus('auto')
+        #Step 3
+        self._takePerfectshotPicture()
+
+    def _takePerfectshotPicture(self):
+        #Get the number of photo in sdcard
+        result = self.adbCmd('ls '+DCIM_PATH)
+        if result.find(CAMERA_FOLDER) == -1:
+            self.logger.info("no 100ANDRO folder.")
+            beforeNo = '0'
+        #Get the number of photo in sdcard
+        else:
+            beforeNo = commands.getoutput('adb shell ls /mnt/sdcard/DCIM/*  | grep BST | wc -l')
+        self.touch(Camera,waittime=5)
+        afterNo = commands.getoutput('adb shell ls /mnt/sdcard/DCIM/*  | grep BST | wc -l')
+        if string.atoi(beforeNo) != string.atoi(afterNo) - 9:
+            self.fail('take picture fail!')
+
+    def _setGeoLocationStatus(self,status):
+        commands.getoutput('adb shell input swipe 530 6 523 22')
+        self.touch(Setting)\
+        .touch(Geolocation)
+        if status =='on':
+            self.touch((170,280))
+        elif status =='off':
+            self.touch((50,286))
+        state = self.adbCmd(Geolocation_STATE)
+        statevalue = state.find(status)
+        if statevalue == -1:
+            self.fail('set camera geoloaction'+status+ 'fail!')
+
+    def _setExposureStatus(self,status):
+        commands.getoutput('adb shell input swipe 530 6 523 22')
+        # Enter exposuer setting
+        self.touch(Setting)\
+        .touch(Exposure)
+        if status =='0':
+            self.touch((290,288))
+        elif status =='3':
+            self.touch((400,294))
+        elif status =='6':
+            self.touch((520,290))
+        elif status =='-3':
+            self.touch((170,292))
+        elif status =='-6':
+            self.touch((56,292))
+        state = self.adbCmd(Exposure_STATE)
+        statevalue = state.find(status)
+        if statevalue == -1:
+            self.fail('set camera exposure'+status+ 'fail!')
+
+    def _setScenesStatus(self,status):
+        commands.getoutput('adb shell input swipe 530 6 523 22')
+        self.touch(Setting)\
+        .touch(Scences)
+        if status =='sports':
+            self.touch((410,296))
+        elif status =='night':
+            self.touch((288,296))
+        elif status =='landscape':
+            self.touch((170,298))
+        elif status =='portrait':
+            self.touch((50,300))
+        elif status =='auto':
+            self.touch((510,292))
+        state = self.adbCmd(Scene_STATE)
+        statevalue = state.find(status)
+        if statevalue == -1:
+            self.fail('set camera scenes to'+status+'fail!')
+
+    def _launchperfectshot(self):
+        self.launch(self.runComponent)
+        if self.exists('location.png'):
+            self.touch('ok.png')
+        self.touch((650,1190))\
+        .touch((220,1184)) 
+
+    def tearDown(self):
+        self.adbCmd('rm -r '+ PICTURE_PATH + '/*')
+        self.press('back,back,back,home')
+        super(PerfectShotTest,self).tearDown()

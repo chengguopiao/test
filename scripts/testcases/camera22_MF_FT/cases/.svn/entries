@@ -1,0 +1,682 @@
+10
+
+dir
+5905
+svn://192.168.1.120/testproj/branches/borqs/stability_smartat_dev/camera22_FeatureTest_RHB/cases
+svn://192.168.1.120/testproj
+
+
+
+2013-07-18T07:04:01.398695Z
+5858
+b487
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6d698c2e-a673-4285-9c6a-a8c2bf025fa3
+
+hdrcapture.CameraTest.testCaptureWithExposurePlusTwo
+dir
+
+singlecamera.CameraTest.testCaptureWithExposurePlusOne
+dir
+
+videocapture.VideoCameraTest.testRearFaceRecordVideoWithGeoLocationOn
+dir
+
+smilecapture.CameraTest.testCaptureWithExposurePlusOne
+dir
+
+singlecamera.CameraTest.testCapturePictureWithFlashOff
+dir
+
+burstslowcapture.BurstCameraTest.testCaptureWithExposureRedOne
+dir
+
+burstslowcapture.BurstCameraTest.testCaptureWithExposurePlusTwo
+dir
+
+__init__.py
+file
+
+
+
+
+2012-12-20T07:45:58.000000Z
+ec640364450f29b6e5067942ea63a6f5
+2013-07-18T07:04:01.398695Z
+5858
+b487
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+23
+
+smilecapture.CameraTest.testRearFaceCapturepictureWithGeoLocationOff
+dir
+
+hdrcapture.CameraTest.testCaptureWithExposurePlusOne
+dir
+
+smilecapture.CameraTest.testCapturePictureWithFlashOff
+dir
+
+smilecapture.CameraTest.testRearFaceCapturepictureWithGeoLocationOn
+dir
+
+videocapture.VideoCameraTest.testRecordVideoWithGeoLocationOn
+dir
+
+hdrcapture.CameraTest.testCapturePictureWithFDOn
+dir
+
+singlecamera.CameraTest.testSwitchToCamera
+dir
+
+panoramacapture.PanoramaTest.testCaptureWithExposureRedTwo
+dir
+
+smilecapture.CameraTest.testCapturepictureWithGeoLocationOff
+dir
+
+burstslowcapture.BurstCameraTest.testCaptureWithExposurePlusOne
+dir
+
+burstfastcapture.BurstCameraTest.testCaptureWithExposurePlusTwo
+dir
+
+hdrcapture.CameraTest.testCapturepictureWithGeoLocationOff
+dir
+
+singlecamera.CameraTest.testCapturePictureWithScenesSport
+dir
+
+smilecapture.CameraTest.testCapturePictureWithScenesPortrait
+dir
+
+burstslowcapture.BurstCameraTest.testCapturePictureWithScenesLandscape
+dir
+
+singlecamera.CameraTest.testCapturePictureWithScenesAuto
+dir
+
+panoramacapture.PanoramaTest.testCaptureWithExposureRedOne
+dir
+
+singlecamera.CameraTest.testCapturePictureWithScenesNight
+dir
+
+panoramacapture.PanoramaTest.testCaptureWithExposurePlusTwo
+dir
+
+burstfastcapture.BurstCameraTest.testCaptureWithExposurePlusOne
+dir
+
+panoramacapture.py
+file
+
+
+
+
+2013-07-18T03:02:29.001145Z
+31b6673c885eaed0862ddc7c5023d198
+2013-07-18T07:04:01.398695Z
+5858
+b487
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8993
+
+singlecamera.CameraTest.testRearFaceCapturePictureWithFDOff
+dir
+
+burstslowcapture.BurstCameraTest.testCapturepictureWithGeoLocationOn
+dir
+
+singlecamera.CameraTest.testRearFaceCapturePictureWithFDON
+dir
+
+videocapture.VideoCameraTest.testRecordVideoWithVideoSizeFHD
+dir
+
+panoramacapture.PanoramaTest.testCaptureWithExposurePlusOne
+dir
+
+videocapture.VideoCameraTest.testRecordSwithToTestCamera
+dir
+
+burstfastcapture.BurstCameraTest.testCapturepictureWithGeoLocationOff
+dir
+
+panoramacapture.PanoramaTest.testCapturePictureWithFlashOff
+dir
+
+burstslowcapture.BurstCameraTest.testCapturePictureWithScenesAuto
+dir
+
+smilecapture.py
+file
+
+
+
+
+2013-07-18T03:00:12.000846Z
+0a60dc427ceb5511aae3732575a1a7d8
+2013-07-18T07:04:01.398695Z
+5858
+b487
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18041
+
+panoramacapture.PanoramaTest.testCapturePictureWithFlashOn
+dir
+
+perfectshot.PerfectShotTest.testCapturepictureWithGeoLocationOff
+dir
+
+singlecamera.CameraTest.testRearFaceCapturepictureWithGeoLocationOn
+dir
+
+hdrcapture.CameraTest.testCapturePictureWithFDOff
+dir
+
+videocapture.VideoCameraTest.testRecordVideoWithGeoLocationOff
+dir
+
+burstfastcapture.BurstCameraTest.testCapturePictureWithScenesPortrait
+dir
+
+hdrcapture.py
+file
+
+
+
+
+2013-07-18T03:03:01.000894Z
+e6409f47e989bfe5548f579e324fe972
+2013-07-18T07:04:01.398695Z
+5858
+b487
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10107
+
+burstslowcapture.BurstCameraTest.testCaptureWithExposureZero
+dir
+
+panoramacapture.PanoramaTest.testCapturepictureWithGeoLocationOn
+dir
+
+perfectshot.PerfectShotTest.testCapturePictureWithScenesPortrait
+dir
+
+perfectshot.PerfectShotTest.testCapturePictureWithScenesSport
+dir
+
+singlecamera.CameraTest.testCaptureWithExposureRedTwo
+dir
+
+smilecapture.CameraTest.testCapturepictureWithGeoLocationOn
+dir
+
+perfectshot.PerfectShotTest.testCapturePictureWithScenesNight
+dir
+
+hdrcapture.CameraTest.testCapturepictureWithGeoLocationOn
+dir
+
+smilecapture.CameraTest.testCapturePictureWithScenesSport
+dir
+
+singlecamera.CameraTest.testCaptureWithExposureRedOne
+dir
+
+panoramacapture.PanoramaTest.testCaptureWithExposureZero
+dir
+
+smilecapture.CameraTest.testCapturePictureWithScenesNight
+dir
+
+smilecapture.CameraTest.testCaptureWithExposureZero
+dir
+
+singlecamera.CameraTest.testCapturepictureWithHintsOn
+dir
+
+videocapture.VideoCameraTest.testRearFaceRecordVideoWithGeoLocationOff
+dir
+
+panoramacapture.PanoramaTest.testCapturePictureWithFlashAuto
+dir
+
+singlecamera.CameraTest.testCapturePictureWithFDOff
+dir
+
+videocapture.py
+file
+
+
+
+
+2013-07-18T03:01:15.000844Z
+7a5d61170afef4b18016f55023bea324
+2013-07-18T07:04:01.398695Z
+5858
+b487
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11522
+
+hdrcapture.CameraTest.testCaptureWithExposureZero
+dir
+
+singlecamera.py
+file
+
+
+
+
+2013-07-17T06:33:00.987163Z
+fa166b045d5be4e3e93c3d6f25785b11
+2013-07-18T07:04:01.398695Z
+5858
+b487
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+24246
+
+videocapture.VideoCameraTest.testRecordVideoWithFlashOff
+dir
+
+singlecamera.CameraTest.testRearFaceCapturepictureWithGeoLocationOff
+dir
+
+burstfastcapture.BurstCameraTest.testCapturepictureWithGeoLocationOn
+dir
+
+singlecamera.CameraTest.testCapturePictureWithPictureSizeStandard
+dir
+
+smilecapture.CameraTest.testCapturePictureWithFlashAuto
+dir
+
+singlecamera.CameraTest.testCapturePictureWithFlashOn
+dir
+
+singlecamera.CameraTest.testCapturePictureWithScenesLandscape
+dir
+
+perfectshot.PerfectShotTest.testCaptureWithExposureRedTwo
+dir
+
+singlecamera.CameraTest.testCapturepictureWithGeoLocationOff
+dir
+
+burstslowcapture.BurstCameraTest.testCaptureWithPictureSizeWidesreen
+dir
+
+burstfastcapture.BurstCameraTest.testCapturePictureWithScenesSport
+dir
+
+singlecamera.CameraTest.testCapturepictureWithGeoLocationOn
+dir
+
+burstfastcapture.BurstCameraTest.testCapturePictureWithScenesNight
+dir
+
+perfectshot.PerfectShotTest.testCaptureWithExposureRedOne
+dir
+
+singlecamera.CameraTest.testCapturePictureWithScenesPortrait
+dir
+
+burstfastcapture.BurstCameraTest.testCaptureWithExposureZero
+dir
+
+smilecapture.CameraTest.testCaptureWithExposureRedTwo
+dir
+
+perfectshot.PerfectShotTest.testCaptureWithExposurePlusTwo
+dir
+
+burstslowcapture.BurstCameraTest.testCaptureWithPictureSizeStandard
+dir
+
+hdrcapture.CameraTest.testCaptureWithExposureRedTwo
+dir
+
+smilecapture.CameraTest.testCapturePictureWithScenesAuto
+dir
+
+burstslowcapture.BurstCameraTest.testCapturepictureWithGeoLocationOff
+dir
+
+perfectshot.PerfectShotTest.testCaptureWithExposurePlusOne
+dir
+
+smilecapture.CameraTest.testCaptureWithExposureRedOne
+dir
+
+singlecamera.CameraTest.testCaptureWithExposureZero
+dir
+
+perfectshot.py
+file
+
+
+
+
+2013-07-18T03:01:45.000856Z
+c49f86ba42bfc6fa6c965bc89cddd156
+2013-07-18T07:04:01.398695Z
+5858
+b487
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10193
+
+hdrcapture.CameraTest.testCaptureWithExposureRedOne
+dir
+
+burstfastcapture.BurstCameraTest.testCaptureWithPictureSizeStandard
+dir
+
+smilecapture.CameraTest.testCaptureWithPictureSizeWidesreen
+dir
+
+burstslowcapture.BurstCameraTest.testCapturePictureWithScenesPortrait
+dir
+
+burstslowcapture.py
+file
+
+
+
+
+2013-07-18T03:04:26.000847Z
+a2abfed4bbc5a9fcabf1b9cbed72d0a5
+2013-07-18T07:04:01.398695Z
+5858
+b487
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12860
+
+videocapture.VideoCameraTest.testRecordVideoWithVideoSizeSD
+dir
+
+perfectshot.PerfectShotTest.testCapturePictureWithScenesLandscape
+dir
+
+singlecamera.CameraTest.testCapturePictureWithFlashAuto
+dir
+
+burstslowcapture.BurstCameraTest.testCapturePictureWithScenesSport
+dir
+
+singlecamera.CameraTest.testCapturePictureWithFDON
+dir
+
+videocapture.VideoCameraTest.testRecordVideoWithFlashOn
+dir
+
+hdrcapture.CameraTest.testCaptureWithPictureSizeWidesreen
+dir
+
+burstslowcapture.BurstCameraTest.testCapturePictureWithScenesNight
+dir
+
+burstfastcapture.BurstCameraTest.testCaptureWithExposureRedTwo
+dir
+
+perfectshot.PerfectShotTest.testCapturepictureWithGeoLocationOn
+dir
+
+smilecapture.CameraTest.testCapturePictureWithPictureSizeStandard
+dir
+
+burstfastcapture.py
+file
+
+
+
+
+2013-07-18T03:05:04.000849Z
+14451f38d785e794f17e14e85e39359e
+2013-07-18T07:04:01.398695Z
+5858
+b487
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12845
+
+panoramacapture.PanoramaTest.testCapturepictureWithGeoLocationOff
+dir
+
+smilecapture.CameraTest.testCapturePictureWithFlashOn
+dir
+
+hdrcapture.CameraTest.testCapturePictureWithPictureSizeStandard
+dir
+
+smilecapture.CameraTest.testCapturePictureWithScenesLandscape
+dir
+
+burstfastcapture.BurstCameraTest.testCapturePictureWithScenesAuto
+dir
+
+burstfastcapture.BurstCameraTest.testCaptureWithExposureRedOne
+dir
+
+perfectshot.PerfectShotTest.testCapturePictureWithScenesAuto
+dir
+
+burstfastcapture.BurstCameraTest.testCaptureWithPictureSizeWidesreen
+dir
+
+perfectshot.PerfectShotTest.testCaptureWithExposureZero
+dir
+
+videocapture.VideoCameraTest.testRecordVideoWithVideoSizeHD
+dir
+
+singlecamera.CameraTest.testCaptureWithExposurePlusTwo
+dir
+
+smilecapture.CameraTest.testCaptureWithExposurePlusTwo
+dir
+
+singlecamera.CameraTest.testCaptureWithPictureSizeWidesreen
+dir
+
+singlecamera.CameraTest.testCapturepictureWithHintsOff
+dir
+
+burstslowcapture.BurstCameraTest.testCaptureWithExposureRedTwo
+dir
+
+burstfastcapture.BurstCameraTest.testCapturePictureWithScenesLandscape
+dir
+

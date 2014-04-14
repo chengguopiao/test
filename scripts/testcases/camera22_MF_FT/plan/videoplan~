@@ -1,0 +1,11 @@
+[tests]
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithBalanceAuto = 1
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithBalanceIncandescent = 1
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithBalanceDaylight = 1
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithBalanceFluorescent = 1
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithBalanceCloudy = 1
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithExposureAuto = 1
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithExposure1 = 1
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithExposure2 = 1
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithExposureRed1 = 1
+videocapture.VideoCameraTest.testRecordVideoCaptureVideoWithExposureRed2 = 1

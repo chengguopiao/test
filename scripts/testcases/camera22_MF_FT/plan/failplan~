@@ -1,0 +1,5 @@
+[tests]
+singlecamera.CameraTest.testCapturePictureWithPictureSizeStandard = 1
+singlecamera.CameraTest.testSwitchToCamera=1
+videocapture.VideoCameraTest.testRecordVideoWithFlashOn = 1
+videocapture.VideoCameraTest.testRecordVideoWithFlashOff = 1
