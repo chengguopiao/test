@@ -1,0 +1,24 @@
+Camerastress.CameraTest.testCapturecontinueimage200timesbackcamera = 1
+Camerastress.CameraTest.testCapturepanoramaimage200timesbackcamera = 1
+#Camerastress.CameraTest.testCapturesmileimage500timesfrontcamera = 1
+Camerastress.CameraTest.testswitchbackfrontcameraineachmode30times = 1
+Camerastress.CameraTest.testswitchmode50times = 1
+Camerastress.CameraTest.testentergalleryfromgallerypreviewthumbnail100times = 1
+Camerastress.CameraTest.testlaunchcamera50times = 1
+
+Camerastress.CameraTest.testCapturehdrimage500timesbackcamera = 1
+Camerastress.CameraTest.testRecord1080Pvideo500times = 1
+Camerastress.CameraTest.testRecordvideo500timesfrontcamera = 1
+Camerastress.CameraTest.testCapturesmileimage500timesbackcamera = 1
+
+Camerastress.CameraTest.testChangeflashmode100times = 1
+Camerastress.CameraTest.testChangescenemode100times = 1
+
+Camerastress.CameraTest.testCaptureperfectshotimage200timesbackcamera = 1
+Camerastress.CameraTest.testChangeexposuremode100times = 1
+Camerastress.CameraTest.testChangepicturesizemode100times = 1
+Camerastress.CameraTest.testChangevideosizemode100times = 1
+Camerastress.CameraTest.testCaptureburstimage200timesbackcamera = 1
+Camerastress.CameraTest.testCapturesingleimage500timesbackcamera = 1
+Camerastress.CameraTest.testCapturesingleimage500timesfrontcamera = 1
+
